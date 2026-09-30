@@ -1,4 +1,11 @@
 {
   "name": "Inventario Riesgo",
-  "image": "mcr.microsoft.com/devcontainers/java:21"
+  "image": "mcr.microsoft.com/devcontainers/java:21",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "22"
+    },
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "forwardPorts": [8080, 15672]
 }
